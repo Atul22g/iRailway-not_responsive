@@ -10,13 +10,13 @@
   </head>
   <body>
     <header>
-      <a href="index.html" class="logo">iRailway</a>
+      <a href="index.php" class="logo">iRailway</a>
       <nav>
         <ul>
-          <li><a href="index.html" class="active-nav">HOME</a></li>
-          <li><a href="book-ticket.html">BOOK TICKET</a></li>
-          <li><a href="about.html">ABOUT US</a></li>
-          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="index.php" class="active-nav">HOME</a></li>
+          <li><a href="book-ticket.php">BOOK TICKET</a></li>
+          <li><a href="about.php">ABOUT US</a></li>
+          <li><a href="contact.php">CONTACT US</a></li>
         </ul>
       </nav>
     </header>
@@ -48,7 +48,7 @@
     <section class="section-home">
       <h1>Train Details</h1>
       <section class="section-details">
-        <img src="image/01.jpg" alt="train" />
+        <img src="image/01.jpg" alt="train" width="30%" height="100%" />
         <p>
           In rail transport, a train is a series of connected vehicles that run
           along a railway track and transport people or freight. The word train
@@ -89,11 +89,11 @@
           as has light rail in the 21st century. Freight trains remain important
           for the transport of bulk commodities such as coal and grain,
         </p>
-        <img src="image/02.jpg" alt="train" />
+        <img src="image/02.jpg" alt="train" width="30%" height="100%" />
       </section>
 
       <section class="section-details">
-        <img src="image/03.jpg" alt="train" />
+        <img src="image/03.jpg" alt="train" width="30%" height="100%"  />
         <p>
           as well as being a means of reducing road traffic congestion by
           freight trucks. <br />
@@ -126,11 +126,11 @@
           locomotives grew larger and more powerful throughout the rest of the
           century as technology advanced.[8]
         </p>
-        <img src="image/05.jpg" alt="train" />
+        <img src="image/05.jpg" alt="train" width="30%" height="100%"  />
       </section>
 
       <section class="section-details">
-        <img src="image/06.jpg" alt="train" />
+        <img src="image/06.jpg" alt="train" width="30%" height="100%"  />
         <p>
           Trains first entered service in South America, Africa, and Asia
           through construction by imperial powers, which starting in the 1840s

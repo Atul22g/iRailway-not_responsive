@@ -9,21 +9,21 @@
   </head>
   <body>
     <header>
-      <a href="index.html" class="logo">iRailway</a>
+      <a href="index.php" class="logo">iRailway</a>
       <nav>
         <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="book-ticket.html">BOOK TICKET</a></li>
-          <li><a href="about.html">ABOUT US</a></li>
-          <li><a href="contact.html" class="active-nav">CONTACT US</a></li>
+          <li><a href="index.php">HOME</a></li>
+          <li><a href="book-ticket.php">BOOK TICKET</a></li>
+          <li><a href="about.php">ABOUT US</a></li>
+          <li><a href="contact.php" class="active-nav">CONTACT US</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="section-form">
-        <form action="" class="form">
+        <form method="">
           <h2>Contact Me</h2>
-          <table class="form">
+          <table class="form2">
             <tr>
               <label for="name">
                 <th>Name :-</th>
@@ -55,9 +55,10 @@
                 <th>Phone No :-</th>
                 <td>
                   <input
-                    type="phone"
+                    type="tel"
                     name="phone"
-                    placeholder="00000 00000"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="Enter The Phone no"
                     maxlength="10"
                   />
                 </td>
@@ -70,7 +71,6 @@
                 <td>
                   <textarea
                     name="massage"
-                    name="message"
                     cols="50"
                     rows="10"
                     placeholder="Enter The Your Message"

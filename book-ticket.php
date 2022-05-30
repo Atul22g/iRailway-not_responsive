@@ -9,21 +9,21 @@
   </head>
   <body>
     <header>
-      <a href="index.html" class="logo">iRailway</a>
+      <a href="index.php" class="logo">iRailway</a>
       <nav>
         <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="book-ticket.html" class="active-nav">BOOK TICKET</a></li>
-          <li><a href="about.html">ABOUT US</a></li>
-          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="index.php">HOME</a></li>
+          <li><a href="book-ticket.php" class="active-nav">BOOK TICKET</a></li>
+          <li><a href="about.php">ABOUT US</a></li>
+          <li><a href="contact.php">CONTACT US</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="section-form">
-        <form action="" class="form">
+        <form method="" class="form">
           <h2>Book Your Ticket Now</h2>
-          <table class="form">
+          <table>
             <tr>
               <label for="Resevation_Quota">
                 <th>Resevation Quota :-</th>
@@ -98,7 +98,9 @@
               </label>
             </tr>
             <tr>
-              <th colspan="2"><input class="submit" type="submit" name="submit" /></th>
+              <th colspan="2">
+                <input class="submit" type="submit" name="submit" />
+              </th>
             </tr>
           </table>
         </form>

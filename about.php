@@ -9,13 +9,13 @@
   </head>
   <body>
     <header>
-      <a href="index.html" class="logo">iRailway</a>
+      <a href="index.php" class="logo">iRailway</a>
       <nav>
         <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="book-ticket.html">BOOK TICKET</a></li>
-          <li><a href="about.html" class="active-nav">ABOUT US</a></li>
-          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="index.php">HOME</a></li>
+          <li><a href="book-ticket.php">BOOK TICKET</a></li>
+          <li><a href="about.php" class="active-nav">ABOUT US</a></li>
+          <li><a href="contact.php">CONTACT US</a></li>
         </ul>
       </nav>
     </header>

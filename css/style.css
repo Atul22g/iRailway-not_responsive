@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* ####################################################### nav ############################################## */
+/* ####################################################### header ############################################## */
 
 header {
   width: 100%;
@@ -22,8 +22,8 @@ header {
   color: #ffffff;
   text-transform: uppercase;
   font-style: italic;
-  letter-spacing: 0.15em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.06em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
 }
 
@@ -42,6 +42,7 @@ nav ul li a {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 8px 10px;
   border-radius: 18px;
+  font-style: italic;
 }
 nav ul li a:hover,
 .active-nav {
@@ -119,10 +120,10 @@ nav ul li a:hover,
   margin: 10px 25px;
 }
 
-.section-home h1{
+.section-home h1 {
   font-size: 2.2em;
   color: #373e98;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: oblique;
   text-transform: uppercase;
 }
@@ -135,7 +136,7 @@ nav ul li a:hover,
   margin: 20px 30px;
   text-align: left;
   font-size: larger;
-  width: 1000px;
+  width: 70%;
 }
 
 /* ####################################################### section form ############################################## */
@@ -143,56 +144,75 @@ nav ul li a:hover,
   margin: 50px 0;
 }
 
-.form {
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.form {
+
+table {
   border-collapse: separate;
   border-spacing: 0 15px;
 }
+
 h2 {
   text-transform: uppercase;
+  text-align: center;
   font-size: 2.5em;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-style: italic;
+  font-weight: bolder;
   margin: 20px 0;
   color: #373e98;
 }
-.form tr th {
+form tr th {
   font-style: italic;
   font-size: 1.2em;
   text-transform: capitalize;
-  padding-right: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.form tr td input , select , textarea {
-  padding: 3px 5px;
-  font-size: medium;
+.form tr th {
+  width: 35%;
+}
+
+.form tr td {
+  width: 50%;
+}
+
+.form2 tr td input,
+.form2 tr td textarea {
+  margin-left: 1em;
+}
+
+form tr td input,
+select,
+textarea {
+  padding: 5px 8px;
+  font-size: 1.2em;
   width: 100%;
 }
 
-textarea{
+textarea {
   resize: none;
 }
 
-.submit{
-  width: 100%;
-  height: 35px;
+.submit {
+  width: 90%;
+  height: 38px;
   border-radius: 20px;
   background-color: #373e98;
   color: #ffffff;
   border: none;
   font-size: large;
   font-weight: 600;
-  font-family: serif;
-  margin-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px auto;
+  text-transform: capitalize;
 }
 
-.submit:hover{
+.submit:hover {
   background-color: #ffffff;
   color: #373e98;
   border: 2px solid #373e98;
@@ -203,10 +223,10 @@ textarea{
   margin: 25px;
 }
 
-.section-about h1{
+.section-about h1 {
   font-size: 2.2em;
   color: #373e98;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: oblique;
   text-transform: uppercase;
   margin-bottom: 1rem;
