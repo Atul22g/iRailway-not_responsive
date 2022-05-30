@@ -9,19 +9,19 @@
   </head>
   <body>
     <header>
-      <a href="index.php" class="logo">iRailway</a>
+      <a href="index.html" class="logo">iRailway</a>
       <nav>
         <ul>
-          <li><a href="index.php">HOME</a></li>
-          <li><a href="book-ticket.php">BOOK TICKET</a></li>
-          <li><a href="about.php">ABOUT US</a></li>
-          <li><a href="contact.php" class="active-nav">CONTACT US</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="book-ticket.html">BOOK TICKET</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="contact.html" class="active-nav">CONTACT US</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="section-form">
-        <form method="">
+        <form method="post" action="connect.php">
           <h2>Contact Me</h2>
           <table class="form2">
             <tr>
@@ -32,6 +32,7 @@
                     type="text"
                     name="name"
                     placeholder="Enter Your Name"
+                    required
                   />
                 </td>
               </label>
@@ -45,6 +46,7 @@
                     type="email"
                     name="Email"
                     placeholder="example@gmail.com"
+                    required
                   />
                 </td>
               </label>
@@ -57,9 +59,10 @@
                   <input
                     type="tel"
                     name="phone"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     placeholder="Enter The Phone no"
                     maxlength="10"
+                    minlength="9"
+                    required
                   />
                 </td>
               </label>
@@ -74,6 +77,7 @@
                     cols="50"
                     rows="10"
                     placeholder="Enter The Your Message"
+                    required
                   ></textarea>
                 </td>
               </label>
@@ -81,7 +85,7 @@
 
             <tr>
               <th colspan="2">
-                <input class="submit" type="submit" name="submit" />
+                <input class="submit" type="submit" name="submit2" />
               </th>
             </tr>
           </table>

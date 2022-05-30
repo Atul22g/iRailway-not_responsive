@@ -129,6 +129,7 @@ nav ul li a:hover,
 }
 .section-details {
   display: flex;
+  align-items: center;
   margin: 25px 0;
 }
 
@@ -241,6 +242,20 @@ textarea {
   text-align: justify;
   font-size: large;
 }
+
+/* .section-about-first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section-about-first p {
+  width: 70%;
+}
+
+.section-about-first img {
+  width: 300px;
+  height: 100%;
+} */
 
 /* ####################################################### footer ############################################## */
 footer {

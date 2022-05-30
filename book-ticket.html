@@ -9,26 +9,26 @@
   </head>
   <body>
     <header>
-      <a href="index.php" class="logo">iRailway</a>
+      <a href="index.html" class="logo">iRailway</a>
       <nav>
         <ul>
-          <li><a href="index.php">HOME</a></li>
-          <li><a href="book-ticket.php" class="active-nav">BOOK TICKET</a></li>
-          <li><a href="about.php">ABOUT US</a></li>
-          <li><a href="contact.php">CONTACT US</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="book-ticket.html" class="active-nav">BOOK TICKET</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="section-form">
-        <form method="" class="form">
+        <form method="post" action="connect.php" class="form">
           <h2>Book Your Ticket Now</h2>
           <table>
             <tr>
               <label for="Resevation_Quota">
                 <th>Resevation Quota :-</th>
                 <td>
-                  <select name="Resevation_Quota">
+                  <select name="Resevation_Quota" required>
                     <option value="Please Select">Please Select</option>
                     <option value="First Class">First Class</option>
                     <option value="Second Class">Second Class</option>
@@ -47,6 +47,7 @@
                     type="text"
                     name="Train_Name_Number"
                     placeholder="Enter the Train Name or Number"
+                    required
                   />
                 </td>
               </label>
@@ -60,6 +61,7 @@
                     type="text"
                     name="passengers"
                     placeholder="How Many Passengers"
+                    required
                   />
                 </td>
               </label>
@@ -73,6 +75,7 @@
                     type="text"
                     name="Journey_From"
                     placeholder="Enter the Journey From"
+                    required
                   />
                 </td>
               </label>
@@ -86,6 +89,7 @@
                     type="text"
                     name="Journey_To"
                     placeholder="Enter the Journey To"
+                    required
                   />
                 </td>
               </label>
@@ -94,7 +98,7 @@
             <tr>
               <label for="Date">
                 <th>Departure/Journey Date :-</th>
-                <td><input type="date" name="Date" /></td>
+                <td><input type="date" name="Date" required /></td>
               </label>
             </tr>
             <tr>
