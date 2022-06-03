@@ -67,26 +67,19 @@
             </tr>
           </table>
         </form>
-
-        <!-- CREATE TABLE `atul`.`irailway` ( `Sr. no` INT(255) NOT NULL AUTO_INCREMENT , `resevation` VARCHAR(255) NOT NULL , `Train` VARCHAR(255) NOT NULL , `Passengers` VARCHAR(255) NOT NULL , `From` VARCHAR(255) NOT NULL , `To` VARCHAR(255) NOT NULL , `Date` DATE NOT NULL , PRIMARY KEY (`Sr. no`)) ENGINE = InnoDB; -->
-
-<!-- CREATE TABLE `atul`.`contact me` ( `Sr. no` INT(255) NOT NULL AUTO_INCREMENT , `name` VARCHAR(255) NOT NULL , `email` VARCHAR(255) NOT NULL , `phone` VARCHAR(255) NOT NULL , `messages` VARCHAR(255) NOT NULL , PRIMARY KEY (`Sr. no`)) ENGINE = InnoDB; -->
 <?php
-// Connect to the Database 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "atul";
-
 // Create a connection
-$conn = mysqli_connect($servername, $username, $password, $database);
+mysql_connect('localhost', 'root', '') or die(mysql_error());
+echo "Connection Found <br>";
 
-// Die if connection was not successful
-// if ($conn){
-//     echo "<h3>Connection Found<h2>";
-// }
+mysql_select_db("atul") or die(mysql_error());
+echo "DataBase Selected <br>";
 
 // 1 Book Ticket
+
+// Create table
+// mysql_query("create table irailway( `resevation` VARCHAR(255), `Train` VARCHAR(255), `Passengers` VARCHAR(255), `From` VARCHAR(255), `To` VARCHAR(255), `Date` DATE") or die(mysql_error());
+// echo "Table Created <br>";
 
 if(isset($_POST['submit'])){
  $Resevation = $_POST['Resevation_Quota'];
@@ -96,39 +89,38 @@ if(isset($_POST['submit'])){
  $to = $_POST['Journey_To'];
  $Date = $_POST['Date'];
 
-$sql1 = "insert into `irailway` (`resevation`, `Train`, `Passengers`, `From`, `To`, `Date`) VALUES('$Resevation', '$Train', '$passengers', '$from', '$to', '$Date')";
-
-mysqli_query($conn, $sql1);
-
-echo "<h3>Thanks </h3>
-<h3> Your Form is Submit.</h3>";
+mysql_query("insert into irailway VALUES('$Resevation', '$Train', '$passengers', '$from', '$to', '$Date')") or die(mysql_error());
+echo "<br> <h1>Thanks </h1> <br>
+<h2> Your Form is Submit.</h2>";
 }
 
 // Delete Query
 
 if(isset($_POST['submit3'])){
-  $Train = $_POST['Train_Name_Number'];
-  $from = $_POST['Journey_From'];
-  $to = $_POST['Journey_To'];
-  
-  $sql = "DELETE FROM `irailway` WHERE `Train` = '$Train' and `From` = '$from' and `To` = '$to'";
-  $result = mysqli_query($conn, $sql);
-  echo "<h3> Your Ticket Was Canceled </h3>";
-}
+    $Train = $_POST['Train_Name_Number'];
+    $from = $_POST['Journey_From'];
+    $to = $_POST['Journey_To'];
+    
+    mysql_query("delete from irailway WHERE `Train` = '$Train' and `From` = '$from' and `To` = '$to'") or die(mysql_error());
+    echo "<h3> Your Ticket Was Canceled </h3>";
+  }
 
 // 2 Contact me
 
+// Create table
+// mysql_query("create table contact_me( `name` VARCHAR(255), `email` VARCHAR(255), `phone` VARCHAR(255), `messages` VARCHAR(255)") or die(mysql_error());
+// echo "Table Created <br>";
+
+
 if(isset($_POST['submit2'])){
-  $name = $_POST['name'];
-  $Email = $_POST['Email'];
-  $phone = $_POST['phone'];
-  $massage = $_POST['massage'];
-  
-  $sql1 = "INSERT INTO `contact me` (`name`, `email`, `phone`, `messages`) VALUES ('$name', '$Email', '$phone', '$massage')";
-  mysqli_query($conn, $sql1);
-  
-  echo "<h3>Thanks </h3>
-  <h3> Your Form is Submit.</h3>";
+$name = $_POST['name'];
+$Email = $_POST['Email'];
+$phone = $_POST['phone'];
+$massage = $_POST['massage'];
+
+mysql_query("insert into contact_me VALUES('$name', '$Email', '$phone', '$massage')") or die(mysql_error());
+echo "<br> <h1>Thanks </h1> <br>
+<h2> Your Form is Submit.</h2>";
 }
 ?>
 </body>
