@@ -70,10 +70,10 @@
 <?php
 // Create a connection
 mysql_connect('localhost', 'root', '') or die(mysql_error());
-echo "Connection Found <br>";
+// echo "Connection Found <br>";
 
 mysql_select_db("atul") or die(mysql_error());
-echo "DataBase Selected <br>";
+// echo "DataBase Selected <br>";
 
 // 1 Book Ticket
 
@@ -104,24 +104,6 @@ if(isset($_POST['submit3'])){
     mysql_query("delete from irailway WHERE `Train` = '$Train' and `From` = '$from' and `To` = '$to'") or die(mysql_error());
     echo "<h3> Your Ticket Was Canceled </h3>";
   }
-
-// 2 Contact me
-
-// Create table
-// mysql_query("create table contact_me( `name` VARCHAR(255), `email` VARCHAR(255), `phone` VARCHAR(255), `messages` VARCHAR(255)") or die(mysql_error());
-// echo "Table Created <br>";
-
-
-if(isset($_POST['submit2'])){
-$name = $_POST['name'];
-$Email = $_POST['Email'];
-$phone = $_POST['phone'];
-$massage = $_POST['massage'];
-
-mysql_query("insert into contact_me VALUES('$name', '$Email', '$phone', '$massage')") or die(mysql_error());
-echo "<br> <h1>Thanks </h1> <br>
-<h2> Your Form is Submit.</h2>";
-}
 ?>
 </body>
 </html>

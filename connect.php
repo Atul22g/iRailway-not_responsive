@@ -115,21 +115,6 @@ if(isset($_POST['submit3'])){
   $result = mysqli_query($conn, $sql);
   echo "<h3> Your Ticket Was Canceled </h3>";
 }
-
-// 2 Contact me
-
-if(isset($_POST['submit2'])){
-  $name = $_POST['name'];
-  $Email = $_POST['Email'];
-  $phone = $_POST['phone'];
-  $massage = $_POST['massage'];
-  
-  $sql1 = "INSERT INTO `contact me` (`name`, `email`, `phone`, `messages`) VALUES ('$name', '$Email', '$phone', '$massage')";
-  mysqli_query($conn, $sql1);
-  
-  echo "<h3>Thanks </h3>
-  <h3> Your Form is Submit.</h3>";
-}
 ?>
 </body>
 </html>
